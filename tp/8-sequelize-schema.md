@@ -44,7 +44,7 @@ Vous aller devoir créer un utilisateur en complétant de contenu de la route pr
 - Importer **User** issue du fichier `database.js`
 - Appeler la fonction `User.create()` avec les données reçut de la requête POST
 - Retourner le résultat avec une **201**
-- Appeler la fonction **next(error)** en cas d’échec. L’erreur sera retournée par le middleware déjà en place.
+- Appeler la fonction **next(error)** en cas d’échec (ajoutez **next** dans les paramètres de la fonction, après req,res). L’erreur sera retournée par le middleware déjà en place.
 
 **Vérifiez avec une requête Postman le bon fonctionnement.**
 
@@ -58,4 +58,5 @@ Complétez les méthodes **PUT**, **GET** et **DELETE**.
 - Retournez 404 s’il n’existe pas
 - Retournez 204 pour DELETE
 - Renvoyez les erreurs au Middleware
-- Utilisez les méthodes **User.findByPk**, **User.destroy**, **user.update**
+- Utilisez les méthodes [User.findByPk](https://sequelize.org/docs/v6/core-concepts/model-querying-finders/#findbypk), [User.destroy](https://sequelize.org/docs/v6/core-concepts/model-instances/#deleting-an-instance), [user.update](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-update-queries)
+

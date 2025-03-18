@@ -6,7 +6,7 @@ Les routes permettent de définir comment votre application répond aux requête
 
 Les paramètres d'URL permettent de capturer des valeurs dans l'URL elle-même.
 
-**Créez un fichier routes.js et ajoutez le code suivant :**
+**Ajoutez ces routes suivantes :**
 ```javascript
 // Route avec paramètre URL
 app.get('/users/:id', (req, res) => {
